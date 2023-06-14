@@ -1,6 +1,6 @@
 package lr2;
 
-public class Rectangle {
+public class Rectangle implements Figures{
     float height;
     float width;
 
