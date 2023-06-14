@@ -1,4 +1,4 @@
-package lab2;
+package lr2;
 
 public class Triangle implements Figures {
     float height;

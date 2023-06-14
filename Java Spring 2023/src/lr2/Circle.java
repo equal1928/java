@@ -1,4 +1,4 @@
-package lab2;
+package lr2;
 
 public class Circle implements Figures{
     float radius;

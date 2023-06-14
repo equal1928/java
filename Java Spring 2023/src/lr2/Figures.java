@@ -1,4 +1,4 @@
-package lab2;
+package lr2;
 
   interface Figures {
 
