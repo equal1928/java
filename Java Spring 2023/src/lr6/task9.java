@@ -6,15 +6,13 @@ import java.util.stream.Collectors;
 public class task9 {
     public static void main(String[] args) {
 
-            String string = "Очень важная строка" + "в которой есть слова" + "С большой буквы," + "а есть с маленькой";
+            String string = "Очень важная строка 122 \t" + "в которой есть слова \t" + "С большой буквы, \t" + "а есть с маленькой 536 \t";
 
-            List<String> strings = List.of(string.split(""));
+            List<String> strings = List.of(string.split("\t"));
             System.out.println("\n"+"Строка после сплита: " + "\n");
             for (String e : strings) {
                 System.out.println(e);
             }
-
-            int len = 4;
 
             List<String> stringAfter = checkRegex(strings);
 
@@ -31,10 +29,10 @@ public class task9 {
         }
         public static Boolean checkInt(String word) {
 
-        boolean hasDigits = true;
-        for(int i = 0; i<word.length() && hasDigits; i++) {
+        boolean hasDigits = false;
+        for(int i = 0; i < word.length() && hasDigits; i++) {
             if(!Character.isAlphabetic(word.charAt(i))) {
-                hasDigits = false;
+                hasDigits = true;
             }
         }
         return hasDigits;
